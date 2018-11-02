@@ -11,6 +11,9 @@ class SessionsController < ApplicationController
     render 'welcome/home'
   end
 
+  def destroy
+    session.clear
+
   private
 
   def auth
