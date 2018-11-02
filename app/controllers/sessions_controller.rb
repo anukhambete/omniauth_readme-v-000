@@ -13,6 +13,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session.clear
+    render 'welcome/home'
   end
 
   private
